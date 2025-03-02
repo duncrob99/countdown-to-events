@@ -37,7 +37,7 @@ def display(deck_browser, content):
             deleteEventFromDb(eventID)
         else:
             content.stats += "<br>" + \
-                bold(str(daysLeft)) + " days until " + exam
+                bold(str(daysLeft)) + " day" + ("s" if daysLeft > 1 else "") + " until " + exam
 
 
 def deleteEventFromDb(eventID):
